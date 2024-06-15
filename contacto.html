@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./img/icon/icono.png">
+    <title>Erick Loza / Contacto</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header" id="header"></div>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col"><!-- action="https://formsubmit.co/erickcdigg@gmail.com" method="POST"-->
+                    <form id="formulario" >
+                        <span class="mensajeEstado" id="mensajeNombre">* </span>
+                        <input type="text" name="name" id="txtNombre" onblur="validarInput(this, 1)" placeholder="Nombre">
+                        <span class="mensajeEstado" id="mensajeApellido">* </span>
+                        <input type="text" name="lastname" id="txtApellido" onblur="validarInput(this, 2)" placeholder="Apellido">
+                        <span class="mensajeEstado" id="mensajePhone"></span>
+                        <input type="text" name="phone" id="txtPhone" onblur="validarInput(this, 3)" placeholder="Número Celular">
+                        <span class="mensajeEstado" id="mensajeEmail"></span>
+                        <input type="email" name="email" id="txtEmail" onblur="validarInput(this, 4)" placeholder="Correo electronico">
+                        <span class="mensajeEstado" id="mensajeAsunto"></span>
+                        <input type="text" name="subject" id="txtAsunto" onblur="validarInput(this, 5)" placeholder="Asunto">
+                        <span class="mensajeEstado" id="mensajeComents"></span>
+                        <textarea name="coments" id="txtArea" cols="30" rows="10" onblur="validarInput(this, 6)" placeholder="Mensaje"></textarea>
+                        <input type="submit" class="btnEnviar" value="Enviar Mensaje">
+                        <input type="submit" class="btnEnviar" id="limpiar" value="limpiar">
+                        <!--<input type="hidden" name="_next" value="https://erickloza.netlify.app/congratulation.html">
+                        <input type="hidden" name="_captcha" value="false">-->
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion4.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ubicación: Puno - Perú
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Celular: 902747650
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: erickcdigg@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#contacto" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div id="foot"></div>
+    </footer>
+
+    <script src="./js/includes.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

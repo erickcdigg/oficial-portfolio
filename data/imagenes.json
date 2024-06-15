@@ -1,0 +1,20 @@
+[
+    {
+        "titulo": "Calculadora",
+        "description": "Calculadora basica en html, css y javascript",
+        "direction": "./img/calculadora.avif",
+        "url":"https://calculator-operation-demo.netlify.app/"
+    },
+    {
+        "titulo": "Portafolio",
+        "description": "Portafolio con mi experiencia",
+        "direction": "./img/erickloza.avif",
+        "url":"https://erickloza.netlify.app/"
+    },
+    {
+        "titulo": "¿Como se declara un programador?",
+        "description": "simple juego para conquistar",
+        "direction": "./img/declaracion-de-amor.avif",
+        "url":"https://programador-enamorado.netlify.app/"
+    }
+]
